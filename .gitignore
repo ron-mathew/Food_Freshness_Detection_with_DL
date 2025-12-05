@@ -1,4 +1,6 @@
+# ---------------------
 # Python
+# ---------------------
 __pycache__/
 *.pyc
 *.pyo
@@ -11,31 +13,42 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# ---------------------
 # Node / React
+# ---------------------
 node_modules/
+web/node_modules/
 web/build/
 web/dist/
 web/.next/
 
-# Models (we'll download them instead of storing in git)
+# ---------------------
+# Machine Learning
+# ---------------------
 models/*.pt
 models/*.onnx
 models/*.tflite
+models/*.h5
+models/*.pth
 
-# Data (raw/processed images - keep out of git)
+# Large datasets
 data/
 datasets/
-*.zip
 *.jpg
 *.jpeg
 *.png
+*.zip
+*.csv
 
-# Logs & temporary files
+# ---------------------
+# Logs & Temporary
+# ---------------------
 *.log
 *.tmp
-*.csv
 .DS_Store
 
-# IDE / OS files
+# ---------------------
+# OS / IDE
+# ---------------------
 .vscode/
 .idea/
